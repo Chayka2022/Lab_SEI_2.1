@@ -7,9 +7,9 @@
 #define TIMER_PRESCALER ((1 << CS11) | (1 << CS10)) // Prescaler 64
 
 // --- TASK OFFSETS (First Execution Delay) ---
-#define TASK1_OFFSET 1000  // Starts after 100ms
-#define TASK2_OFFSET 1500  // Starts after 300ms
-#define TASK3_OFFSET 2000  // Starts after 500ms
+#define TASK1_OFFSET 1000
+#define TASK2_OFFSET 5000
+#define TASK3_OFFSET 2000
 
 // --- TASK RECURRENCE SETTINGS ---
 #define TASK1_REC (500 / SYS_TICK)
