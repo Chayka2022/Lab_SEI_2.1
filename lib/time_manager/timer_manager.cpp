@@ -1,7 +1,4 @@
 #include "timer_manager.h"   // Include function declaration
-#include <Arduino.h>
-#include "config.h"  // Include timer constants
-#include "task_scheduler.h"
 
 // === TIMER SETUP FUNCTION ===
 void setup_timer() {
@@ -13,5 +10,5 @@ void setup_timer() {
 
 // === TIMER INTERRUPT HANDLER ===
 ISR(TIMER1_COMPA_vect) {
-    task_scheduler();
+    task_scheduler_loop();
 }

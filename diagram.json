@@ -42,6 +42,13 @@
       "left": 396.6,
       "rotate": 90,
       "attrs": { "color": "red", "xray": "1" }
+    },
+    {
+      "type": "wokwi-lcd2004",
+      "id": "lcd1",
+      "top": -377.6,
+      "left": -80.8,
+      "attrs": { "pins": "i2c" }
     }
   ],
   "connections": [
@@ -61,7 +68,11 @@
     [ "bb1:9t.b", "mega:9", "green", [ "v0" ] ],
     [ "bb1:1b.f", "bb1:2b.f", "green", [ "v0" ] ],
     [ "btn3:2.l", "bb1:2b.h", "green", [ "v0" ] ],
-    [ "btn1:2.l", "bb1:2b.i", "green", [ "v0" ] ]
+    [ "btn1:2.l", "bb1:2b.i", "green", [ "v0" ] ],
+    [ "lcd1:VCC", "mega:5V.2", "red", [ "h-38.4", "v-57.5", "h460.8" ] ],
+    [ "lcd1:SDA", "mega:SDA", "green", [ "h-28.8", "v317", "h201.6" ] ],
+    [ "lcd1:SCL", "mega:SCL", "green", [ "h-19.2", "v297.9", "h182.4", "v19.2" ] ],
+    [ "lcd1:GND", "mega:GND.1", "black", [ "h-38.4", "v326.4", "h220.8" ] ]
   ],
   "dependencies": {}
 }
