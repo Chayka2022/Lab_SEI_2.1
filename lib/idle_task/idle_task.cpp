@@ -1,19 +1,17 @@
 #include "idle_task.h"
-#include "Arduino.h"
-#include "config.h"
-#include "globals.h"
-#include "peripherals.h"
-#include "dd_LCD_20x4(I2C).h"
+
+extern volatile bool led1_state;
+extern volatile int state_var;
 
 // === IDLE TASK: PRINT SYSTEM STATE ===
 void idle_task() {   
-    lcd_device.setCursor(0, 0); 
-    lcd_device.printMessage("LED1:");
-    lcd_device.print(led1_state ? "ON " : "OFF");
-    lcd_device.setCursor(0, 1);
-    lcd_device.print("LED2: ");
-    lcd_device.print(digitalRead(LED2) ? "ON " : "OFF");
-    lcd_device.setCursor(0, 2);
-    lcd_device.print("StateVar: ");
-    lcd_device.print(state_var);
+    dd_LCD_setCursor(0, 0); 
+    dd_LCD_print("LED1:");
+    dd_LCD_print(led1_state ? "ON " : "OFF");
+    dd_LCD_setCursor(0, 1);
+    dd_LCD_print("LED2: ");
+    dd_LCD_print(digitalRead(LED2) ? "ON " : "OFF");
+    dd_LCD_setCursor(0, 2);
+    dd_LCD_print("StateVar: ");
+    dd_LCD_print(state_var);
 }

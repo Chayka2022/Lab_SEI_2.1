@@ -1,8 +1,6 @@
 #include "task3_state_var.h"
-#include "Arduino.h"
-#include "config.h"
-#include "globals.h"
-#include "peripherals.h"
+
+extern volatile int state_var;
 
 // === TASK 3: STATE VARIABLE INCREMENT/DECREMENT ===
 extern void task3_state_var() {

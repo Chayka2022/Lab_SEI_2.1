@@ -1,8 +1,6 @@
 #include "task2_led_blink.h"
-#include "Arduino.h"
-#include "config.h"
-#include "globals.h"
-#include "peripherals.h"
+
+extern volatile bool led1_state;
 
 // === TASK 2: BLINK LED2 ONLY WHEN LED1 IS OFF ===
 extern void task2_led_blink() {
