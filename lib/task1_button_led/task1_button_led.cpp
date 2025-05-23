@@ -12,6 +12,5 @@ extern void task1_button_led() {
         }
         while (digitalRead(BUTTON1) == LOW);
     }
-    Serial.print("LED1: ");
-    Serial.println(led1_state);
+    printf("LED1 state: %s\n", led1_state ? "ON" : "OFF");
 }

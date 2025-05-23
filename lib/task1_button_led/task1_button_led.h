@@ -4,6 +4,7 @@
 #include "Arduino.h"
 #include "config.h"
 #include "peripherals.h"
+#include "own_stdio.h"
 
 // === TASK 1: TOGGLE LED1 ON BUTTON PRESS ===
 extern void task1_button_led();

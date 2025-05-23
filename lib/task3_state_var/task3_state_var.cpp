@@ -20,6 +20,5 @@ extern void task3_state_var() {
         while (digitalRead(BUTTON3) == LOW);
     }
 
-    Serial.print("StateVar: ");
-    Serial.println(state_var);
+    printf("State variable: %d\n", state_var);
 }

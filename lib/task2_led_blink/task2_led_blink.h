@@ -4,6 +4,7 @@
 #include "Arduino.h"
 #include "config.h"
 #include "peripherals.h"
+#include "own_stdio.h"
 
 // === TASK 2: BLINK LED2 ONLY WHEN LED1 IS OFF ===
 extern void task2_led_blink();

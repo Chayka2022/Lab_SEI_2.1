@@ -4,6 +4,7 @@
 #include "Arduino.h"
 #include "config.h"
 #include "peripherals.h"
+#include "own_stdio.h"
 
 // === TASK 3: STATE VARIABLE INCREMENT/DECREMENT ===
 extern void task3_state_var();

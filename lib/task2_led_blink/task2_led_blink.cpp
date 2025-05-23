@@ -11,6 +11,5 @@ extern void task2_led_blink() {
     } else {
         digitalWrite(LED2, LOW);
     }
-    Serial.print("LED2: ");
-    Serial.println(digitalRead(LED2));
+    printf("LED2 state: %s\n", led2_state ? "ON" : "OFF");
 }
